@@ -9,7 +9,12 @@
 </head>
 
 <body>
-    <h1>Index</h1>
+    <form action="print.php" method="get">
+        <label for="textuser">Scrivi una frase</label>
+        <input type="text" name="textuser" id="textuser">
+        <button type="submit">Print</button>
+        <button type="reset">Clear</button>
+    </form>
 </body>
 
 </html>

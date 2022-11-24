@@ -1,3 +1,7 @@
+<?php
+$user_print = $_GET["textuser"]
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +13,9 @@
 </head>
 
 <body>
-    <h1>print</h1>
+    <h2>Stampo la frase scritta nel form per intero</h2>
+    <p><?php echo $user_print; ?> </p>
+    <a href="index.php">Torna indietro</a>
 </body>
 
 </html>
