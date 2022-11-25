@@ -1,5 +1,6 @@
 <?php
-$user_print = $_GET["textuser"]
+$user_print = $_GET["textuser"];
+
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@ $user_print = $_GET["textuser"]
         <?php
         $longe_print = explode(" ", $user_print);
         ?>
-        <p><?php var_dump($longe_print); ?></p>
+        <p> Lunghezza:<?php echo strlen($user_print) ?></p>
     </div>
     <div class="three">
         <h2>Frase con taglio</h2>
@@ -32,17 +33,16 @@ $user_print = $_GET["textuser"]
         $news = array("***", "***", "***");
         $new_string = str_replace($sub_print, $news, $user_print);
         ?>
-        <?php
-        $new_longe = explode(" ", $new_string);
-        ?>
+
         <p>
             <?php
             echo $new_string;
             ?>
         </p>
         <p>
+            Lunghezza:
             <?php
-            var_dump($new_longe);
+            echo strlen($new_string);
             ?>
         </p>
     </div>
